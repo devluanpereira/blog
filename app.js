@@ -3,7 +3,6 @@ const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const path = require('path');
-const { error } = require('console');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended:true }));
@@ -68,6 +67,10 @@ app.get('/post/:title', (req, res) => {
             res.json(row);
         }
     );
+});
+
+app.get('/post-details/:title', (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "post-details.html"));
 });
 
 app.post('/add', upload.single('image'), (req, res) => {
