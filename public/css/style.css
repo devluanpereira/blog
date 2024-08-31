@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 *{
     padding: 0;
@@ -6,12 +6,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-    font-family: "Ubuntu Condensed", sans-serif;
+    font-family: "Acme", sans-serif;
+
 }
 
 
 :root {
-    --second-color: #d59bf6;
+    --second-color: #3b4a6b;
     --container-color: #01282f;
     --text-color: #001244;
     --bg-color: #fff;
@@ -101,7 +102,7 @@ header {
 }
 
 .home-content h2{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: var(--bg-color);
     text-align: center;
 }
