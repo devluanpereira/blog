@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
 *{
     padding: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-    font-family: "Bangers", system-ui;
+    font-family: "Ubuntu Condensed", sans-serif;
 }
 
 
@@ -89,4 +89,43 @@ header {
     padding: 7px 17px;
     font-size: 0.96rem;
     border-radius: 8px;
+}
+
+.home {
+    width: 100%;
+    min-height: 440px;
+    background: var(--second-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h2{
+    font-size: 3.5rem;
+    color: var(--bg-color);
+    text-align: center;
+}
+
+.search-box {
+    background: var(--bg-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1.5rem;
+}
+
+.search-box .bx{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.search-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size:  0.9rem;
+    padding: 10px 0;
 }
