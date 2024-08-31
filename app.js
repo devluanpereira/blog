@@ -75,7 +75,7 @@ app.post('/add', upload.single('image'), (req, res) => {
     const image = req.file ? `/uploads/${req.file.filename}` : null;
 
     db.run(
-        "INSERT INTO posts (title, category, content, image, created_at) VALUES (?,?,?,?, CURRENT_TIMESTAMP",
+        "INSERT INTO posts (title, category, content, image) VALUES (?,?,?,?)",
         [title, category, content, image],
         (err) => {
             if (err) {
